@@ -21,15 +21,45 @@
     </header>
     <div class="containerConverter">
         <div class="converter">
-
+            <h2>Currency Converter</h2>
+            <form>
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input type="text" value="1">
+                </div>
+                <div class="dropdown">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="selectCont">
+                            <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                            <select name="from" id="">
+                                <option value="USD">USD</option>
+                                <option value="IND">IND</option>
+                                <option value="EUR">EUR</option>
+                                <option value="JPY">JPY</option>
+                            </select>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2rem" width="2rem" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#333" d="M32 96l320 0V32c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l96 96c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-96 96c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V160L32 160c-17.7 0-32-14.3-32-32s14.3-32 32-32zM480 352c17.7 0 32 14.3 32 32s-14.3 32-32 32H160v64c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-96-96c-6-6-9.4-14.1-9.4-22.6s3.4-16.6 9.4-22.6l96-96c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 64H480z"/></svg>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="selectCont">
+                            <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                            <select name="to" id="">
+                                <option value="USD">USD</option>
+                                <option value="IND">IND</option>
+                                <option value="EUR">EUR</option>
+                                <option value="JPY">JPY</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">1USD = 83INR</div>
+                <button>Get Exchange Rate</button>
+            </form>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="list.js"></script>
+    <script src="script1.js"></script>
 </body>
-<!--6a994e for icon color
-f2e8cf for header bg
-bc4749 for font color
-a7c957 
-386641
--->
 </html>

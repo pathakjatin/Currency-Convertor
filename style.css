@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Kalnia', serif;
+    /* 6a994e for icon color
+    f2e8cf for header bg
+    bc4749 for font color
+    a7c957 
+    386641 */
 }
 h1{
     padding: 15px;
@@ -36,8 +41,60 @@ body::before{
     padding-top: 100px;
 }
 .converter{
-    background-color: #f2e8cf;
-    opacity: 0.75;
-    height: 450px;
-    width: 575px;
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: #ffffff;
+    opacity: 1;
+    height: 50vh;
+    width: 55vh;
+}
+form{
+    margin: 2rem 0;
+}
+form select , button , input{
+    width: 100%;
+    border: none;
+    border-radius: 0.75rem;
+    outline: none;
+    font-size: 1rem;
+    color: #386641;
+    font-weight: 500;
+}
+form input{
+    border: 2px solid lightgray;
+    height: 3rem;
+    padding-left: 0.5rem;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.selectCont{
+    display: flex;
+    width: 6rem;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 2px solid lightgray;
+}
+.selectCont img{
+    max-width: 2rem;
+}
+.selectCont select{
+    background-color: transparent;
+    font-size: 1rem;
+    width: auto;
+}
+.message{
+    margin: 2rem 0rem;
+}
+form button{
+    cursor: pointer;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #a7c957;
 }
