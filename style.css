@@ -67,6 +67,7 @@ form input{
 }
 .dropdown{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
@@ -97,4 +98,49 @@ form button{
     font-size: 1.5rem;
     font-weight: 500;
     background-color: #a7c957;
+}
+@media (max-width:500px){
+    h1{
+        font-size: 1.3rem;
+    }
+    .converter{
+        height: 55vh;
+        width: 45vh;
+    }
+}
+@media (max-height:700px){
+    .converter{
+        height: 70vh;
+        width: 50vh;
+    }
+    body{
+        height: 120vh;
+    }
+}
+@media (max-height:525px){
+    body{
+        height: 130vh;
+    }
+    .dropdown{
+        flex-wrap: nowrap;
+    }
+    .converter{
+        height: 75vh;
+        width: 55vh;
+        padding: 1.25rem;
+    }
+    .message{
+        margin: 1.25rem 0rem;
+    }
+    form button{
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .dropdown svg{
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    form input{
+        height: 2rem;
+    }
 }
